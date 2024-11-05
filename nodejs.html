@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-book</title>
+    <link rel="stylesheet" href="nevbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav class="nev" id="">
+     <a href="main.html">
+        <i class="fa-solid fa-house-chimney-user"></i>
+     </a>
+
+     <a href="ebook.html">E-BOOK</a>
+        <!-- <a href="?page=RID">html</a> -->
+        <a href="html.html">html</a>
+        <a href="css.html">css</a>
+        <a href="js.html">javascript</a>
+        <a href="nodejs.html">node.js</a>
+        <a href="python.html">python</a>
+        <a href="xl.html">XL</a>
+        <a href="sql.html">sql</a>
+        <a href="php.html">php</a>
+        <a href="java.html">java</a>
+        <a href="c.html">c</a>
+        <a href="c++.html">c++</a>
+        <a href="r.html">R</a>
+        <a href="go.html">go</a>
+        <a href="c-heas.html">c#</a>
+        <a href="rust.html">rust</a>
+        <a href="react.html">react</a>
+        <a href="ruby.html">ruby</a>
+        <a href="kotlin.html">kotlin</a>
+    </nav><br><br>
+   <div class="container">
+        <h3 class="left">
+            RID Tutorial
+        </h3>
+        <a href="?page=Reserch 1">node-js leval 1</a><br>
+        <a href="?page=Reserch 2">node-js leval 2</a><br>
+        <a href="?page=Reserch 3">node-js leval 3</a><br>
+        <a href="?page=Reserch 4">node-js leval 4</a><br>
+        
+        <a href="?page=Reserch 5">node-js leval 5</a><br>
+     
+        <h3 class="left"><br>
+            RID Tutorial
+        </h3>
+        <a href="?page=Reserch 1">node-js leval 6</a><br>
+        <a href="?page=Reserch 2">node-js leval 7</a><br>
+        <a href="?page=Reserch 3">node-js leval 8</a><br>
+        <a href="?page=Reserch 4">node-js leval 9</a><br>
+        
+        <a href="?page=Reserch 5">node-js 10</a><br>
+   
+   
+        <h3 class="left"><br>
+            RID Tutorial
+        </h3>
+        <a href="?page=Reserch 1">node-jsleval 11</a><br>
+        <a href="?page=Reserch 2">node-jsleval 12</a><br>
+        <a href="?page=Reserch 3">node-jsleval 13</a><br>
+        <a href="?page=Reserch 4">node-jsleval 14</a><br>
+        
+        <a href="?page=Reserch 5">node-jsleval 14</a><br>
+        <h3 class="left"><br>
+            RID Tutorial
+        </h3>
+        <a href="?page=Reserch 1">node-jsleval 16</a><br>
+        <a href="?page=Reserch 2">node-jsleval 17</a><br>
+        <a href="?page=Reserch 3">node-jsleval 18</a><br>
+        <a href="?page=Reserch 4">node-jsleval 19</a><br>
+        
+        <a href="?page=Reserch 5">node-jsleval 20</a><br>
+        <h3 class="left"><br>
+            RID Tutorial
+        </h3>
+        <a href="?page=Reserch 1">node-jsleval 21 </a><br>
+        <a href="?page=Reserch 2">node-jsleval 22</a><br>
+        <a href="?page=Reserch 3">node-jsleval 23 </a><br>
+        <a href="?page=Reserch 4">node-jsleval 24 </a><br>
+        
+        <a href="?page=Reserch 5">node-jsleval 26</a><br>
+
+    <h3 class="left"><br>
+        RID Tutorial
+    </h3>
+    
+    <a href="?page=Reserch 1">node-jsleval 27 </a><br>
+    <a href="?page=Reserch 2">node-jsleval 28</a><br>
+    <a href="?page=Reserch 3">node-jsleval 29 </a><br>
+    <a href="?page=Reserch 4">node-jsleval 30 </a><br>
+    
+    <a href="?page=Reserch 5">node-jsleval 31</a><br>
+    <h3 class="left"><br>
+        RID Tutorial
+    </h3>
+   
+    <a href="?page=Reserch 2">node-jsleval 32</a><br>
+    <a href="?page=Reserch 3">node-jsleval 33 </a><br>
+    <a href="?page=Reserch 4">node-jsleval 34 </a><br>
+    
+    <a href="?page=Reserch 5">node-jsleval 36</a><br>
+  </div>   
+ 
+
+ 
+<!-- <div class="main-img">
+    <img src="ridmain-img.jpeg" alt="">
+</div> -->
+
+    
+    <div class="content" id="content">
+        <h2>Welcome</h2>
+        <p>Click on the links in the navbar to load content from different pages.</p>
+    </div>
+<script>
+    function loadContent(page) {
+        fetch(page)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('content').innerHTML = data;
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = '<p>Error loading content.</p>';
+                console.error('Error fetching content:', error);
+            });
+    }
+
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // Page reload ke baad ya initial load pe query parameter ke basis par content fetch karna
+    document.addEventListener('DOMContentLoaded', () => {
+        const page = getQueryParam('page');
+        if (page) {
+            loadContent(`${page}.html`);
+        }
+    });
+</script>
+ 
+     
+</body>
+</html>
