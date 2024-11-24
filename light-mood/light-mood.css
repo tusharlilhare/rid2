@@ -1,0 +1,71 @@
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    /* .container {
+        text-align: center;
+        padding: 50px;
+    } */
+    
+    /* Navbar Styles */
+    /* .nev {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #ffffff; /* Light Mode Background */
+        /* color: #000000; /* Light Mode Text */
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        transition: background-color 0.3s, color 0.3s;
+    } */ */
+     */
+    /* .nev a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: inherit;
+        font-size: 16px;
+    } */
+    
+    .nev .theme-toggle {
+        margin-left: auto;
+        padding: 5px 15px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 16px;
+        color: inherit;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: color 0.3s;
+    }
+    
+    /* Dark Mode Styles */
+    body.dark-mode {
+        /* background-color: #012657; */
+        /* Dark Blue */
+        background-color: #000009;
+        /* color: black; */
+    }
+    
+    body.dark-mode .nev {
+        background-color: #011e43f9; /* Dark Navbar Background */
+        color: #ffffff;
+    }
+    
+    body.dark-mode .nev a {
+        color: #ffffff;
+    }
+    
+    body.dark-mode .theme-toggle {
+        color: black;
+    }
+    
+    /* Button Icon Styles */
+    .theme-toggle i {
+        font-size: 18px;
+    }
