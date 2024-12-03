@@ -1,0 +1,112 @@
+body{
+    background-color: #cbe1f7;
+    color:rgba(13, 13, 117, 0.995); 
+    font-size: 20px;
+}
+.next_button{
+background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    justify-content: flex-end;
+   
+    cursor: pointer;
+    align-self: center; 
+    
+    margin-top: auto;
+}
+.Home_button{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    justify-content: flex-end;
+   
+    cursor: pointer;
+    align-self: center; 
+    margin-bottom: 20px;
+    
+}
+.Previous_button{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    justify-content: flex-end;
+   
+    cursor: pointer;
+    align-self: center; 
+    margin-top: auto;
+   
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.example{
+    width: 88%;
+    height: 390px;
+    border: 0.1px solid rgb(72, 177, 247);
+    padding-left: 100px;
+    margin-left: 22px;
+    background-color: rgb(100, 153, 189);
+}
+.code{
+    width: 70%;
+    height: 210px;
+    border: 0.1px solid black;
+    color: azure;
+    /* margin-left: 10px; */
+    background-color: rgba(22, 20, 20, 0.734);
+    overflow: auto;
+
+
+}
+.Copy_button{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+   
+   
+    cursor: pointer;
+    align-self: center; 
+    margin-top: 10px;
+    justify-content: left;
+}
+.Previous_buttonD{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    justify-content: flex-end;
+   
+    cursor: pointer;
+    align-self: center; 
+    margin-top: 10px;
+}
+.next_buttonD{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    justify-content: flex-end;
+   
+    cursor: pointer;
+    align-self: center; 
+    margin-top: 10px;
+
+}
