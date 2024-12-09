@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="html16.css">
+    <style>
+        .container{
+            font-size: 20px;
+            background-color: #cbe1f7;
+        
+        }
+        .d1{
+            width: 800px;
+            height: 100px;
+
+            background-color: rgb(255,0,0);
+            color: white;
+            margin-left: 380px;
+            text-align: center;
+        }
+        .pro{
+            width: 60%;
+            height: 120px;
+            background-color: #cbe1f7;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-left: 300px;
+        }
+        .pp1{
+          text-align: center;
+            
+        }
+        .s1{
+            position: relative;
+            top: 40px;
+        }
+        .container_ex{
+            width: 100%;
+            height: 550px;
+            background-color: #cbe1f7;
+            
+
+        }
+        .container_main{
+            width: 95%;
+            height: 500px;
+            display: grid;
+            gap: 80px;
+            grid-template-columns: repeat(2,600px);
+            grid-template-rows: repeat(3,80px);
+            justify-content: center;
+            
+
+        }
+        .color {
+             
+            border: 2px solid black;
+            text-align: center;
+            padding-top: 35px;
+            
+        
+
+
+        }
+
+    </style>
+</head>
+<body>
+
+<h1 style="text-align: center; text-decoration: underline;">HTML HSL AND HSLA COLORS</h1>
+<div class="both_button">
+
+    <button class="Home_button"> HOME</button>
+    
+    <button class="next_button">NEXT >></ button></div>
+
+<div class="container">
+    <div class="d1"><span  class="s1">hsl(o,100%,50%)</span></div>
+    <div class="pro">
+        <div class="pp1"> HUE <br><progress class="p p1" max="100" value="0"> </progress> <br>0</div>
+        <div class="pp1"> SATURATION <br><progress class="p p2" max="100" value="100"> </progress> <br>100%</div>
+        <div class="pp1"> LIGHTNESS <br><progress class="p p3" max="100" value="50"> </progress> <br>50%</div>
+    </div>
+    <div class="container_ex"><p>Example</p>
+        <div class="container_main">
+            <div class="color c1" style="background-color:     rgb(255,0,0);">hsl(0,100%,50%)</div>
+            <div class="color c2" style="background-color:     rgb(0,0,225);">hsl(240,100%,50%)</div>
+            <div class="color c3" style="background-color:     rgb(60,179,113);">hsl(147,50%,47%)</div>
+            <div class="color c4" style="background-color:     rgb(238,130,238);">hsl(300,76%,72%)</div>
+            <div class="color c5" style="background-color:     rgb(225,165,0);">hsl(39,100%,50%)</div>
+            <div class="color c6" style="background-color:     rgb(106,90,205);">hsl(248,53%,58%)</div>
+
+        </div>
+    
+    </div>
+
+
+
+</div>
+<h1>Saturation</h1>
+<p>Saturatin can be describe as the intensity of a color. </p>
+<p>100% is pure color,no shades of gray.</p>
+<p>50% is 50% gray,but you can still see the color.</p>
+<p>0% is completely gray;you can no longer see the color.</p>
+<div class="container_ex"><p>Example</p>
+    <div class="container_main">
+        <div class="color c1" style="background-color:     rgb(255,0,0);">hsl(0,100%,50%)</div>
+        <div class="color c1" style="background-color:     rgb(233, 16, 16);">hsl(0,80%,50%)</div>
+        <div class="color c1" style="background-color:     rgb(214, 15, 15);">hsl(0,60%,50%)</div>
+        <div class="color c1" style="background-color:     rgb(199, 35, 35);">hsl(0,40%,50%)</div>
+        <div class="color c1" style="background-color:     rgb(119, 55, 55);">hsl(0,20%,50%)</div>
+        <div class="color c1" style="background-color:     rgb(103, 98, 98);">hsl(0,0,50%)</div>
+        
+        
+    </div>
+    
+
+</div>
+<h2>Lightness</h2>
+<p>the lightness of a color can be describe as how much light you want to give the color, where 0% means black ,50% means light(neither dark nor light),and 100% means full lightness.</p>
+<div class="container_ex"><p>Example</p>
+    <div class="container_main">
+        <div class="color c1" style="background-color:     rgb(4, 4, 4);">hsl(0,100%,0)</div>
+        <div class="color c1" style="background-color:     rgb(68, 40, 40);">hsl(0,100%,25%)</div>
+        <div class="color c1" style="background-color:     rgb(251, 2, 2);">hsl(0,100%,50%)</div>
+        <div class="color c1" style="background-color:     rgb(231, 64, 64);">hsl(0,100%,75%)</div>
+        <div class="color c1" style="background-color:     rgb(238, 139, 139);">hsl(0,100%,90%)</div>
+        <div class="color c1" style="background-color:     rgb(252, 250, 250);">hsl(0,100%,100%)</div>
+        
+        
+    </div>
+    
+
+</div>
+<h2>Shades of Gray</h2>
+<p>shades of gray are oftan defines by setting the hue and Saturation to 0, and adjusting the lightness from 0% to 100% to get darker/lighter shades:</p>
+
+    <div class="container_main">
+        <div class="color c1" style="background-color:     rgb(0, 0, 0);">hsl(0,0,20)</div>
+        <div class="color c1" style="background-color:     rgb(50, 50, 50);">hsl(0,0,30%)</div>
+        <div class="color c1" style="background-color:     rgb(60, 59, 59);">hsl(0,0,40%)</div>
+        <div class="color c1" style="background-color:     rgb(87, 87, 87);">hsl(0,0,60%)</div>
+        <div class="color c1" style="background-color:     rgb(131, 130, 130);">hsl(0,0,70%)</div>
+        <div class="color c1" style="background-color:     rgb(201, 200, 200);">hsl(0,0,90%)</div>
+        
+        
+    </div>
+    
+
+</div>
+<div class="both_button">
+
+    <button class="Home_button"> HOME</button>
+    
+    <button class="next_button">NEXT >></ button></div>
+
+
+</body>
+</html>
