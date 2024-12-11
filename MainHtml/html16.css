@@ -1,0 +1,72 @@
+body{
+    font-size: 17px;
+        font-weight: bold;
+        background-color: #cbe1f7;
+        color:rgba(13, 13, 117, 0.995) ;
+        
+}
+/* frist button */
+
+.next_button{
+    background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+       
+       
+        cursor: pointer;
+        align-self: center; 
+       
+    }
+    .both_button{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Home_button{
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+       
+       
+        cursor: pointer;
+        align-self: center; 
+        
+        
+    }
+    /* second */
+    .next_button{
+        background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+           
+           
+            cursor: pointer;
+            align-self: center; 
+           
+        }
+        .both_button{
+            display: flex;
+            justify-content: space-between;
+        }
+        .Home_button{
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+           
+           
+            cursor: pointer;
+            align-self: center; 
+            
+            
+        }
