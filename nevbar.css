@@ -176,7 +176,7 @@ nav a:hover {
 
 .nav-toggle {
     display: none;
-    font-size: 24px;
+    font-size: 28px;
     color: #e7e8e9;
     padding: 10px;
     cursor: pointer;
@@ -203,8 +203,9 @@ nav a:hover {
 }
  .container{
    
-    height: 700px;
-    width: 330px;
+    height: 3200px;
+    /* height: 2300px; */
+    width: 350px;
     margin-left: 4px;
     margin-top: 11px;
     padding: 25px;
@@ -213,6 +214,7 @@ nav a:hover {
      /* background-color: rgba(32, 30, 30, 0.338);  */
      background-color:#024067e8;
      color: #010d15;
+     font-size: 50px;
    
      
  
@@ -224,7 +226,7 @@ nav a:hover {
 }
 
 .container a{
-    font-size: 15px;
+    font-size: 28px;
     margin-top: -2px;
     
 }
