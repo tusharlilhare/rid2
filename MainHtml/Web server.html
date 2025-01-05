@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server</title>
+</head>
+<body>
+
+
+    
+    <style>
+      body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #cbe1f7;
+        margin: 0px;
+        box-sizing: border-box;
+        color: rgba(13, 13, 15, 0.995);
+       
+        font-size: 20px;
+
+
+
+
+    }
+
+    .container123 {
+        margin-top: -243%;
+
+    }
+
+    .next_button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+
+        cursor: pointer;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    .pre_button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+
+        cursor: pointer;
+        align-self: center;
+        margin-bottom: 20px;
+
+    }
+
+    .both_button {
+        margin: 5px;
+        position: relative;
+        top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Align content to the left and make sure it's vertically aligned */
+    .box1 {
+    text-align: left; /* Ensures text aligns to the left */
+    margin-left: 375px; /* Optional: Adds some space from the left edge of the container */
+    word-spacing: 15px;
+    margin-top: 5vh;
+    line-height: 30px;
+    }
+
+    /* To prevent unwanted margin or padding affecting vertical alignment */
+    .box1 b, .box1 p {
+    margin: 0;
+    padding: 0;
+    }
+
+    /* To make sure that the entire div content is properly aligned */
+    #exam {
+    margin-left: 20px; /* Adds indentation if needed for nested items */
+    }
+
+
+    .box3 {
+        width: 900px;
+        height: 400px;
+        background-color: #272822;
+        /* display: flex;
+    justify-content: center;
+    align-items: center; */
+        color: rgb(239, 239, 232);
+        overflow-y: scroll;
+        margin-left: 50vh;
+        margin-top: 5vh;
+        border-radius: 10px;
+        box-shadow: 0px 0px 12px rgb(72, 72, 72);
+    }
+
+    /* .inner_box3{
+    width: 700px;
+    height: 300px;
+    background-color: rgb(221, 219, 219);
+    /* overflow: scroll; */
+    /* margin-left: 10vh;
+    margin-top: 3vh;
+    border-radius: 10px; */
+    /* box-shadow:0px 0px 12px rgb(214, 210, 210); */
+    }
+
+    */ .Copy_button {
+
+        /* color: wheat; */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        /* margin-left: 1px; */
+        cursor: pointer;
+        /* background-color: #20dc74; */
+        /* color: #007BFF; */
+    }
+
+    .buttn {
+        margin-left: -800px;
+        border-radius: 5px;
+
+    }
+
+    .Copy_button {
+        color: #007BFF;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+        .diagram-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #cbe1f7;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 25px;
+            
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 250%;
+          }
+      
+          .box {
+            text-align: center;
+            padding: 20px;
+            padding-left: -25px;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            background: #007bff;
+            color: white;
+            font-weight: bold;
+          }
+      
+          .internet {
+            background: #ff6f61;
+            border-color: #ff6f61;
+          }
+      
+          .arrow {
+            font-size: 18px;
+            color: black;
+            margin: 0 10px;
+          }
+      
+          .server-container {
+            text-align: left;
+          }
+      
+          .server-box {
+            text-align: center;
+            border: 2px solid #f59e42;
+            background: #f59e42;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-weight: bold;
+          }
+      
+          .market-share {
+            margin-top: 20px;
+            font-size: 14px;
+          }
+      
+          .market-share div {
+            margin: 5px 0;
+          }
+      
+          .bar {
+            display: inline-block;
+            height: 10px;
+            background: #007bff;
+          }
+      
+          .apache { width: 50.9%; background: #007bff; }
+          .nginx { width: 32.2%; background: #34c759; }
+          .iis { width: 11.6%; background: #ff9500; }
+          .litespeed { width: 2.3%; background: #af52de; }
+          .google { width: 1.3%; background: #ff3b30; }
+          .tomcat { width: 0.6%; background: #1e90ff; }
+          .ideaweb { width: 0.3%; background: #ffcc00; }
+    </style>
+
+
+
+    <div class="container123">
+      <div class="box1">
+
+
+
+
+    <h1 style="text-align: center; font-size: 40px; color: rgba(13, 13, 117, 0.995);"> Web Server</h1>
+
+<br>
+    
+    <h2>   Definition</h2>
+    <br>
+    <p> A web server is both hardware and software designed to accept, process, and respond to client requests over the <strong>HTTP</strong> or <strong>HTTPS</strong> protocol. It serves as the backbone of websites, enabling the distribution and accessibility of web content on the Internet.
+    </p>
+    <ul>
+        <li><strong>Hardware</strong>: Refers to the physical machine dedicated to hosting websites.</li>
+        <li><strong>Software </strong>: Refers to the program that processes HTTP/HTTPS requests, manages web resources, and delivers responses to clients (web browsers).</li>
+
+    </ul>
+    <br>
+    <h3> Uses</h3>
+    <br>
+    <ul>
+        <li>
+           <strong> Processing HTTP/HTTPS Requests</strong>: Receives client requests (e.g., accessing a web page) and returns the appropriate response (e.g., delivering HTML, CSS, or other resources).</li>
+           <li>
+            <strong>Storing Website Data</strong>: Hosts website files, such as HTML documents, images, videos, and databases, ensuring they are accessible.</li>
+            <li>
+                <strong>Protecting Website Data</strong>: Implements security measures like SSL/TLS encryption, authentication, and access control to safeguard sensitive information.
+            </li>
+    </ul>
+<br>
+    <h3> Examples of Web Servers</h3>
+    <br>
+    <ul>
+        <li> <strong>Apache HTTP Server</strong>: One of the most widely used open-source web servers, known for its flexibility and modularity.</li>
+        <li><strong>Microsoft IIS (Internet Information Services)</strong>: A web server developed by Microsoft for Windows-based systems.</li>
+        <li> <strong>Nginx</strong>: A high-performance web server popular for handling high traffic and acting as a reverse proxy.</li>
+        <li><strong>Apache Tomcat</strong>: Specialized in serving Java-based applications.</li>
+    </ul>
+
+    <div class="diagram-container">
+        <div class="box user">User</div>
+        <div class="arrow">&#8594; Request</div>
+        <div class="box internet">Internet</div>
+        <div class="arrow">&#8594; Request</div>
+        <div class="server-container">
+          <div class="server-box">Web Server</div>
+          <div class="market-share">
+            <div>Apache <span class="bar apache"></span> 50.9%</div>
+            <div>Nginx <span class="bar nginx"></span> 32.2%</div>
+            <div>Microsoft IIS <span class="bar iis"></span> 11.6%</div>
+            <div>LiteSpeed <span class="bar litespeed"></span> 2.3%</div>
+            <div>Google Servers <span class="bar google"></span> 1.3%</div>
+            <div>Tomcat <span class="bar tomcat"></span> 0.6%</div>
+            <div>IdeaWebServer <span class="bar ideaweb"></span> 0.3%</div>
+          </div>
+        </div>
+        <div class="arrow">&#8592; Response</div>
+        <div class="box internet">Internet</div>
+        <div class="arrow">&#8592; Response</div>
+        <div class="box user">User</div>
+      </div>
+
+<br>
+<h3> Work of a Web Server</h3>
+<br>
+<p><strong>Receive Client Request/Response</strong></p>
+<ul>
+    <li>
+       <strong> Read & Verify</strong>: Ensures the incoming HTTP/HTTPS request is valid.</li>
+       <li>
+        <strong>URL Normalization</strong>: Adjusts and standardizes the URL format for processing.</li>
+        <li><strong>URL Mapping</strong>: Maps the incoming request to the corresponding resource or application.</li>
+        <li><strong>URL Path Redirections</strong>: Redirects the client to another URL if necessary.</li>
+</ul>
+
+
+<p><strong>Execute or Refuse HTTP Request Method</strong></p>
+<ul>
+    <li><strong>URL Authorization</strong>: Validates user permissions to access specific URLs.</li>
+    <li>
+        <strong>URL Redirection</strong>: Redirects based on predefined rules or conditions.</li>
+        <li>
+           <strong> Directory Index File</strong>: Serves a default file (like index.html) when accessing a directory.</li>
+           <li>
+
+            <strong>Regular Files</strong>: Delivers static content (e.g., images, text files) if available.</li>
+</ul>
+<p><strong>Response/Replies</strong></p>
+<ul>
+    <li>
+
+
+        <strong>HTTP Response</strong>: Sends back the appropriate status code (e.g., 200, 404) along with requested data.</li>
+        <li>
+
+          <strong>  Logs</strong>: Records request and response details for monitoring and troubleshooting.</li>
+</ul>
+<br>
+<h3>Features</h3>
+<br>
+<ul>
+    <li><strong>Static Content Serving</strong>: The ability of the web server to serve files like HTML, CSS, JavaScript, images, etc., directly to users without modification.</li>
+    <li>
+        <strong>HTTP/HTTPS</strong>: Support for the HyperText Transfer Protocol (HTTP) and its secure version (HTTPS), allowing clients to access web resources securely via SSL/TLS encryption.</li>
+        <li><strong>Logging</strong>: The web server tracks various activities, such as requests, errors, and performance metrics, which helps with troubleshooting and security monitoring.</li>
+        <li>
+           <strong> Dynamic Content Serving</strong>: Serving content that is generated on-demand, such as through CGI scripts, server-side scripting (PHP, Python, etc.), or application servers (e.g., Node.js, Django).</li>
+           <li>
+
+            <strong>Virtual Hosting
+            </strong>: Allows hosting multiple websites on a single server, where each site has its own domain or subdomain, even though they share the same server resources.</li>
+            <li>
+
+               <strong> Authorization</strong>: A method for verifying that users or services attempting to access content or services have the right permissions, often using username and password, tokens, or other authentication methods.</li>
+               <li><strong>Content Cache</strong>: Storing frequently accessed content in memory or disk to improve performance and reduce server load, especially for static resources.</li>
+               <li><strong>Large File Support</strong>: The ability to handle and serve large files (e.g., videos, software downloads) without issues, often with features like chunked transfer encoding or multipart streaming.
+            </li>
+            <li><strong>Bandwidth Throttling</strong>: Limiting the speed at which data can be transferred to and from the server, helping to manage server load, improve fairness, or prevent network congestion.</li>
+            <li><strong>Rewrite Engine</strong>: A set of rules or conditions that allow URL manipulation, such as redirecting users from one page to another or rewriting URLs for cleaner, SEO-friendly addresses.</li>
+            <li><strong>Custom Error Page</strong>: Ability to show user-friendly error pages (e.g., 404 Not Found, 500 Internal Server Error) instead of generic server error messages.</li>
+            <li>
+                <strong>Security</strong>: Includes measures like SSL/TLS encryption, IP blocking, rate limiting, and other techniques to safeguard the server and its data from unauthorized access and attacks.</li>
+</ul>
+
+  
+
+    <div class="both_button">
+      <button class="pre_button"><< Previous</button>
+      <button class="next_button">Next >></button>
+    </div>
+  </div>
+  </div>
+
+    
+</body>
+</html>
