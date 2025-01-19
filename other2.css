@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.other{
+    height: 300px;
+    width: 450px;
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 20px;
+    padding: 15px 20px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    height: 130px;
+    width: 130px;
+    background-color: white;
+    border-radius: 50%;
+    
+}

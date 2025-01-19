@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Engine</title>
+    <style>
+      body {
+          font-family: 'Times New Roman', Times, serif;
+          background-color: #cbe1f7;
+          margin: 0px;
+          box-sizing: border-box;
+          color: rgba(13, 13, 117, 0.995);
+          font-size: 20px;
+
+
+
+
+      }
+
+      .container123 {
+          margin-top: -243%;
+
+      }
+
+      .next_button {
+          background-color: #007BFF;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          border-radius: 5px;
+
+          cursor: pointer;
+          align-self: center;
+          margin-bottom: 20px;
+      }
+
+      .pre_button {
+          background-color: #007BFF;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          border-radius: 5px;
+
+          cursor: pointer;
+          align-self: center;
+          margin-bottom: 20px;
+
+      }
+
+      .both_button {
+          margin: 5px;
+          position: relative;
+          top: 100px;
+          display: flex;
+          justify-content: space-between;
+      }
+
+      /* Align content to the left and make sure it's vertically aligned */
+      .box1 {
+      text-align: left; /* Ensures text aligns to the left */
+      margin-left: 375px; /* Optional: Adds some space from the left edge of the container */
+      word-spacing: 15px;
+      margin-top: 5vh;
+      line-height: 30px;
+      }
+
+      /* To prevent unwanted margin or padding affecting vertical alignment */
+      .box1 b, .box1 p {
+      margin: 0;
+      padding: 0;
+      }
+
+      /* To make sure that the entire div content is properly aligned */
+      #exam {
+      margin-left: 20px; /* Adds indentation if needed for nested items */
+      }
+
+
+      .box3 {
+          width: 900px;
+          height: 400px;
+          background-color: #272822;
+          /* display: flex;
+      justify-content: center;
+      align-items: center; */
+          color: rgb(239, 239, 232);
+          overflow-y: scroll;
+          margin-left: 50vh;
+          margin-top: 5vh;
+          border-radius: 10px;
+          box-shadow: 0px 0px 12px rgb(72, 72, 72);
+      }
+
+      /* .inner_box3{
+      width: 700px;
+      height: 300px;
+      background-color: rgb(221, 219, 219);
+      /* overflow: scroll; */
+      /* margin-left: 10vh;
+      margin-top: 3vh;
+      border-radius: 10px; */
+      /* box-shadow:0px 0px 12px rgb(214, 210, 210); */
+      }
+
+      */ .Copy_button {
+
+          /* color: wheat; */
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          border-radius: 5px;
+          /* margin-left: 1px; */
+          cursor: pointer;
+          /* background-color: #20dc74; */
+          /* color: #007BFF; */
+      }
+
+      .buttn {
+          margin-left: -800px;
+          border-radius: 5px;
+
+      }
+
+      .Copy_button {
+          color: #007BFF;
+          background-color: transparent;
+          border-radius: 5px;
+      }
+
+      body {
+        font-family: sans-serif;
+    }
+    
+    #search-engine {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    #search-bar {
+        padding: 5px;
+    }
+    
+    #workflow {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .step {
+        border: 1px solid #ccc;
+        padding: 20px;
+        width: 20%;
+        text-align: center;
+    }
+    
+    .index-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .index-page {
+        width: 50px;
+        height: 50px;
+        background-color: #eee;
+        border: 1px solid #ccc;
+    }
+    
+    .funnel {
+        position: relative;
+        width: 100px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    
+    .funnel-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(200, 200, 200, 0.5);
+        border-radius: 50% 50% 0 0;
+    }
+    
+    .funnel-layer:nth-child(2) {
+        top: 30px;
+        width: 80%;
+    }
+    
+    .funnel-layer:nth-child(3) {
+        top: 60px;
+        width: 60%;
+        
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="container123">
+        <div class="box1">
+
+      <br>
+    
+      <h1
+        style="
+          text-align: center;
+          font-size: 40px;
+          color: rgba(13, 13, 117, 0.995);
+        "
+      >
+        Search Engine
+      </h1>
+      <br>
+      
+
+      
+      <h2>Definition</h2>
+      <br>
+      <p>
+        A search engine is a software system designed to perform web searches
+        systematically. It is essentially a set of programs that retrieves
+        specific information based on a user's textual query.
+      </p>
+      <p>
+        <strong> Use:</strong>
+        Search engines are used to explore the World Wide Web (WWW) in a
+        structured manner, retrieving information relevant to the specified
+        query.
+      </p>
+      <p>
+        <strong>Conventional Search:</strong> Traditional library catalog
+        systems allow searching by:
+      </p>
+      <ul>
+        <li>Keyword</li>
+        <li>Title</li>
+        <li>Author</li>
+      </ul>
+<br>
+      <h3>Types of Search Engines</h3>
+      <br>
+
+      <ul>
+        <li>
+          <strong> Conventional</strong> - Based on traditional library-style
+          keyword matching.
+        </li>
+        <li>
+          <strong>Text-Based</strong> - Processes and retrieves results based on
+          textual queries.
+        </li>
+        <li>
+          <strong>>Voice-Based</strong> - Responds to voice commands (e.g.,
+          Siri, Google Assistant).
+        </li>
+        <li>
+          <strong> Multimedia Search</strong> - Searches for images, videos, and
+          other non-text content.
+        </li>
+        <li>
+          <strong>Q/A Systems </strong>- Provides direct answers to questions
+          (e.g., Wolfram Alpha).
+        </li>
+        <li>
+          <strong>Clustering Search </strong>- Groups search results into
+          categories.
+        </li>
+        <li>
+          <strong>Research Systems</strong> - Specialized systems for academic
+          or professional research.
+        </li>
+        <li></li>
+      </ul>
+<br>
+      <h3>History</h3>
+      <br>
+      <p>
+        <strong>Birth of Search Engines</strong>: The first search engine,
+        <strong>"Archie"</strong>, was created on
+        <strong>September 10, 1990</strong> by <strong>Alan Emtage</strong>.
+        (Note: "Archie" was not based on the indexing concept).
+      </p>
+
+      <p>
+        <strong> Yahoo!</strong>: The first widely popular search engine,
+        founded in 1994 by <strong>Jerry Yang</strong> and
+        <strong>David Filo</strong>.
+      </p>
+
+      <p>
+        <strong>Google</strong>: Launched in 1998 by
+        <strong>Larry Page</strong> and <strong>Sergey Brin</strong>,
+        introducing the <strong>PageRank algorithm</strong>, indexing, and
+        hyperlink-based search.
+      </p>
+<br>
+      <h3>Examples</h3>
+      <br>
+
+      <ul>
+        <li>Google</li>
+        <li>Bing</li>
+        <li>Yahoo</li>
+        <li>Baidu</li>
+        <li>DuckDuckGo</li>
+        <li>Yandex</li>
+        <li>Ask.com</li>
+        <li>AOL Search</li>
+        <li>Ecosia</li>
+        <li>Qwant</li>
+      </ul>
+<br>
+      <h3>Types of Search Engines</h3>
+      <br>
+      <ol>
+        <li>
+          <strong>Conventional Search Engines</strong>
+          <ul>
+            <li>Based on traditional methods like library catalog systems.</li>
+            <li>
+              Users search using keywords, titles, or authors to locate
+              information.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Text-Based Search Engines</strong>
+          <ul>
+            <li>Operate on textual queries entered by users.</li>
+            <li>
+              Provide results matching the text input in websites, documents, or
+              databases.
+            </li>
+            <li>Example: Google, Bing.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Voice-Based Search Engines</strong>
+          <ul>
+            <li>
+              Allow users to perform searches using voice commands instead of
+              typing.
+            </li>
+            <li>Use speech recognition technology to process queries.</li>
+            <li>Example: Google Assistant, Siri, Alexa.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Multimedia Search Engines</strong>
+          <ul>
+            <li>
+              Specialize in searching for non-textual content such as images,
+              videos, and audio files.
+            </li>
+            <li>Example: Google Images, YouTube Search, Pinterest.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Question/Answer (Q/A) Systems</strong>
+          <ul>
+            <li>
+              Focused on providing direct answers to user questions instead of
+              links to resources.
+            </li>
+            <li>
+              Often use advanced algorithms and natural language processing
+              (NLP).
+            </li>
+            <li>Example: Wolfram Alpha, ChatGPT-based systems.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Clustering Search Engines</strong>
+          <ul>
+            <li>
+              Organize search results into clusters or categories for easier
+              navigation.
+            </li>
+            <li>Useful when dealing with large amounts of data.</li>
+            <li>Example: Carrot2.</li>
+          </ul>
+        </li>
+        <li>
+          <strong> Research Systems</strong>
+          <ul>
+            <li>Tailored for academic or specialized research purposes.</li>
+            <li>
+              Provide access to scholarly articles, patents, and technical
+              papers.
+            </li>
+            <li>Example: Google Scholar, Microsoft Academic.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <p>
+        <strong>Conventional (Library CatLog)</strong>: - Search by keyword
+        title, Author etc.
+      </p>
+<br>
+      <h3>How Search Engines Work</h3>
+      <br>
+      <ol>
+        <li>
+          <strong>Crawling</strong>
+          <ul>
+            <li>Also known as Spider or Spider Bot.</li>
+            <li>
+              An internet bot systematically browses the web for collecting
+              data.
+            </li>
+            <li>Operated by search engines for the purpose of web indexing.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Indexing</strong>
+          <ul>
+            <li>
+              Involves collecting, parsing, and storing data from crawled
+              websites.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Ranking</strong>
+          <ul>
+            <li>
+              Determines the position a website or webpage holds on a search
+              engine results page (SERP).
+            </li>
+          </ul>
+        </li>
+      </ol>
+<br>
+      <h2>Search Results</h2>
+      <br>
+      <p>
+        Search results refer to the output of a query entered into a web search
+        engine. The goal is to satisfy the user's information needs effectively
+        and efficiently.
+      </p>
+<br>
+      <div id="search-engine">
+        <h1>Search Engine</h1>
+        <br>
+        <input type="text" id="search-bar" placeholder="Enter keyword" />
+        <button id="search-button">Go</button>
+      </div>
+
+      <div id="workflow">
+        <div class="step">
+          <h2>Crawling</h2>
+          <img src="spider.png" alt="Spider crawling web" />
+        </div>
+
+        <div class="step">
+          <h2>Indexing</h2>
+          <div class="index-container">
+            <div class="index-page"></div>
+            <div class="index-page"></div>
+            <div class="index-page"></div>
+          </div>
+        </div>
+
+        <div class="step">
+          <h2>Ranking</h2>
+          <div class="funnel">
+            <div class="funnel-layer"></div>
+            <div class="funnel-layer"></div>
+            <div class="funnel-layer"></div>
+          </div>
+          <ul>
+            <li>Meaning</li>
+            <li>Relevance</li>
+            <li>Quality</li>
+            <li>Usability</li>
+            <li>Context</li>
+          </ul>
+        </div>
+
+        <div class="step">
+          <h2>Search Results</h2>
+          <ul id="search-results">
+            <li>Result 1</li>
+            <li>Result 2</li>
+            <li>Result 3</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="both_button">
+        <button class="pre_button"><< Previous</button>
+        <button class="next_button">Next >></button>
+      </div>
+    </div>
+    </div>
+
+    <script>
+    const searchButton = document.getElementById('search-button');
+const searchResults = document.getElementById('search-results');
+
+searchButton.addEventListener('click', () => {
+    // Simulate search results
+    const searchTerm = document.getElementById('search-bar').value;
+    const results = [`Result for ${searchTerm}`, 'Related result 1', 'Related result 2'];
+
+    searchResults.innerHTML = '';
+    results.forEach(result => {
+        const listItem = document.createElement('li');
+        listItem.textContent = result;
+        searchResults.appendChild(listItem);
+    });
+});
+</script>
+
+  </body>
+</html>

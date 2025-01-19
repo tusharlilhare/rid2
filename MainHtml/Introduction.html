@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML</title>
+    <link rel="stylesheet" href="WEB PAGE.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #cbe1f7;
+            margin: 0;
+            box-sizing: border-box;
+            color: rgba(13, 13, 15, 0.995);
+            font-size: 20px;
+        }
+
+        .container123 {
+            margin-top: -243%;
+        }
+
+        .next_button, .pre_button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .both_button {
+            margin: 5px;
+            position: relative;
+            top: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box1 {
+            text-align: left;
+            margin-left: 375px;
+            word-spacing: 15px;
+            margin-top: 5vh;
+            line-height: 30px;
+        }
+
+        .box1 b, .box1 p {
+            margin: 0;
+            padding: 0;
+        }
+
+        #exam {
+            margin-left: 20px;
+        }
+
+        .box3 {
+            width: 900px;
+            height: 400px;
+            background-color: #272822;
+            color: rgb(239, 239, 232);
+            overflow-y: scroll;
+            margin-left: 50vh;
+            margin-top: 5vh;
+            border-radius: 10px;
+            box-shadow: 0px 0px 12px rgb(72, 72, 72);
+        }
+
+        .Copy_button {
+            color: #007BFF;
+            background-color: transparent;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .Example {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #cbe1f7;
+            border-radius: 5px;
+        }
+
+        .code-container {
+            background-color: #cbe1f7;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .code-container code {
+            font-family: monospace;
+            font-size: 14px;
+            color: #333;
+        }
+
+        #copyButton {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container123">
+        <div class="box1">
+            <h1 style="text-align: center; font-size: 40px; color: rgba(13, 13, 117, 0.995);">Introduction to HTML</h1>
+           <br>
+            <h2>❖ What is HTML?</h2>
+            <br>
+            <p>➢ HTML stands for Hyper Text Markup Language.</p>
+            <p>➢ HTML is the standard markup language for creating Web pages.</p>
+            <p>➢ HTML elements tell the browser how to display the content.</p>
+            <p>➢ HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
+            <p>➢ Technically, HTML is a markup language rather than a programming language.</p>
+            <p>➢ HTML is not case-sensitive.</p>
+            <br>
+
+            <h2>❖ Hyper Text:</h2>
+            <br>
+            <p>➢ Hyper Text means "Text within Text." A text with a link within it is hypertext.</p>
+<br>
+            <h2>❖ Markup Language:</h2>
+            <br>
+            <p>➢ A markup language is a computer language used to apply layout and formatting conventions to a text document. It makes the text more interactive and dynamic.</p>
+<br>
+            <h2>❖ Developer:</h2>
+            <br>
+            <p>➢ HTML was developed by <b>Sir Tim Berners-Lee</b>, a British computer scientist, in 1990 while working at CERN (the European Organization for Nuclear Research). He is often credited as the inventor of the <b>World Wide Web.</b> The Father of HTML is known as Sir Tim Berners-Lee.</p>
+<br>
+            <h1>❖ A Simple HTML Document:</h1>
+            <br>
+            <br>
+            <div class="Example">
+                <h2>Example:</h2>
+                <div class="code-container">
+                    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;This is a Heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                </div>
+                <button id="copyButton">Copy Code</button>
+            </div>
+            <br>
+
+            <h2>❖ Explanation of Elements:</h2>
+            <br>
+            <ul>
+                <li>&lt;!DOCTYPE html&gt;: Declares the document type (HTML5 in this case).</li>
+                <li>&lt;html&gt;: Defines the language of the document.</li>
+                <li>&lt;head&gt;: Contains metadata like character set, responsive viewport settings, description, and author.</li>
+                <li>&lt;header&gt;: Includes the title or banner of the page and a navigation menu with links.</li>
+                <li>&lt;main&gt;: Contains the main content of the page divided into sections (&lt;section&gt;).</li>
+                <li>&lt;section&gt;: Used to group related content, such as "About Us" or "Our Services."</li>
+                <li>&lt;footer&gt;: Provides contact information and copyright details.</li>
+            </ul>
+<br>
+            <h2>❖ What is an HTML Element?</h2>
+            <br>
+            <p>➢ An HTML element is the basic building block of HTML (HyperText Markup Language), used to structure content on the web. An HTML element typically consists of:</p>
+<br>
+            <h3>1. Opening Tag:</h3>
+            <br>
+            <p>Defines the start of the element and includes the element's name. For example, &lt;p&gt; indicates a paragraph element.</p>
+<br>
+            <h3>Content:</h3>
+            <br>
+            <p>The information or nested elements inside the opening and closing tags.</p>
+<br>
+            <h3>Closing Tag:</h3>
+            <br>
+            <p>Defines the end of the element, written with a forward slash before the element name, like &lt;/p&gt;.</p>
+<br>
+            <h3>Attributes (optional)</h3>
+            <br>
+            <p>Provide additional information or settings for the element, written inside the opening tag. For example: &lt;a href="https://example.com"&gt;.</p>
+
+            <div class="example">
+                <h1>Example:</h1>
+                <div class="code">
+                    <pre><code>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+                    </code></pre>
+                </div>
+                <button class="Copy_button">Copy <i class="fa-regular fa-copy"></i></button>
+            </div>
+
+            <ul>
+                <li><strong>Opening Tag:</strong> &lt;p&gt;</li>
+                <li><strong>Content:</strong> This is a paragraph.</li>
+                <li><strong>Closing Tag:</strong> &lt;/p&gt;</li>
+            </ul>
+
+            <div class="both_button">
+                <button class="pre_button"><< Previous</button>
+                <button class="next_button">Next >></button>
+              </div>
+            </div>
+            </div>
+
+        </body>
+        </html>         

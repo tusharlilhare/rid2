@@ -1,0 +1,3 @@
+[submodule "rid2"]
+	path = rid2
+	url = https://github.com/tusharlilhare/rid2.git
